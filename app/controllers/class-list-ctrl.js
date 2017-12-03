@@ -21,7 +21,7 @@ app.controller('classListCtrl', function ($scope, $location, userFactory, classF
 	$scope.deleteClass = (classId) => {
 		classFactory.deleteClass(classId)
 			.then(() => showClasses())
-			.catch(error => console.log("error from deleteClass", error.message));
+			.catch(error => window.alert('This is a demo version of Scoring. Deleting data has been disabled.'));
 	};
 
 	//captures id of student to edit, changes window location to edit form

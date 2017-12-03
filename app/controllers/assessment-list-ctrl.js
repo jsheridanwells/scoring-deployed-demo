@@ -29,7 +29,7 @@ app.controller('assessmentListCtrl', function ($scope, $location, userFactory, a
 	$scope.deleteAssessment = (assessmentId) => {
 		assessmentFactory.deleteAssessment(assessmentId)
 			.then(() => showAssessments())
-			.catch(error => console.log("error from deleteAssessment", error.message));
+			.catch(error => window.alert('This is a demo version of Scoring. Deleting data has been disabled.'));
 	};
 
 	//patches an assessment in assessments collection
