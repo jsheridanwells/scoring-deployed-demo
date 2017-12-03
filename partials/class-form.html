@@ -17,7 +17,7 @@
 				Roster Name:
 				<input type="text" class="form-control" ng-model="newClassObj.className">
 			</label>
-			<button type="button" class="btn btn-outline-primary" ng-click="addClass()">{{buttonText}}</button>
+			<button type="button" class="btn btn-outline-primary" ng-click="addClass()" disabled>{{buttonText}}</button>
 		</div>
 		<div class="row">
 			<div class="col-6">
@@ -47,9 +47,9 @@
 			        		<li class="list-group-item" ng-repeat="student in students | filter: searchText">
 			        			<div class="form-check">
 			        				<label class="form-check-label">
-									  <input class="form-check-input" class="checkbox" type="checkbox" ng-click="addRemoveStudent(student, student.id)">
-									    {{student.firstName}} {{student.lastName}}
-									</label>
+											  <input class="form-check-input" class="checkbox" type="checkbox" ng-click="addRemoveStudent(student, student.id)">
+											    {{student.firstName}} {{student.lastName}}
+											</label>
 			        			</div>
 			        		</li>
 			        	</ul>
