@@ -19,6 +19,10 @@ app.config(($routeProvider) => {
 		templateUrl: 'partials/splash.html',
 		controller: 'userCtrl'
 	})
+	.when('/intro', {
+		templateUrl: 'partials/intro.html',
+		controller: 'userCtrl'
+	})
 	.when('/register-login', {
 		templateUrl: 'partials/register.html',
 		controller: 'userCtrl'

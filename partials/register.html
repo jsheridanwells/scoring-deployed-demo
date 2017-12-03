@@ -2,17 +2,23 @@
 	<div class="jumbotron">
 
 		<form>
+			<p>
+        Use these credentials to log in:
+      </p>
+      <p>
+        <strong>Username:</strong> example@example.com
+      </p>
+      <p>
+        <strong>Password:</strong> 123456
+      </p>
 		  <div class="form-group">
-		    <input type="email" class="form-control input-large" id="email-input" aria-describedby="emailHelp" placeholder="Enter email" ng-model="account.email">
+		    <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp" placeholder="Enter email" ng-model="account.email">
 		  </div>
 		  <div class="form-group">
-		    <input type="password" class="form-control input-large" id="password-input" placeholder="Password" ng-model="account.password">
+		    <input type="password" class="form-control" id="password-input" placeholder="Password" ng-model="account.password">
 		  </div>
 		</form>
-
-
-	    <p class="lead center">
-	    	<a class="btn btn-primary btn-lg" href="#" role="button" ng-click="register()" disabled>Register</a>
+	    <p class="lead float-right">
 	    	<a class="btn btn-primary btn-lg" href="#" role="button" ng-click="login()">Login</a>
 	    </p>
 	</div>
